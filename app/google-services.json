@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "708717906",
+    "project_id": "scancy-db11a",
+    "storage_bucket": "scancy-db11a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708717906:android:4e36ee1f68bea54f3a9e8b",
+        "android_client_info": {
+          "package_name": "com.example.lens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708717906-ks59deuie8t8pd62fnc69jifvbcg1g66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lens",
+            "certificate_hash": "d1e29228ffc53ce9ba8a4d1dc8fe599949efaa36"
+          }
+        },
+        {
+          "client_id": "708717906-5ectv3fne07mkacs3k65ggfm1c9rbc7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlMC1IMf8WuUoe4GyDn1qVxxyw58Lu948"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708717906-5ectv3fne07mkacs3k65ggfm1c9rbc7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

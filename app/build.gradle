@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
+}
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\Akash Hiremath\\scancy_keystore_file.jks')
+            storePassword 'Akashkh14'
+            keyAlias 'key0'
+            keyPassword 'Akashkh14'
+        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.lens"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig signingConfigs.debug
+            renderscriptOptimLevel 3
+            renderscriptDebuggable true
+            jniDebuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled true
+    }
+    buildFeatures {
+        mlModelBinding true
+        dataBinding true
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.1.0-rc1'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0-rc2'
+    //implementation 'com.google.firebase:firebase-ml-vision:'
+    implementation 'com.google.firebase:firebase-functions:20.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.mlkit:object-detection:16.2.5'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
+    implementation 'com.google.firebase:firebase-database-ktx:20.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    kapt 'androidx.databinding:databinding-compiler-common:4.2.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+}
